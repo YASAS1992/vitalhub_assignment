@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends ActCommon {
+public class ActCommon extends AppCompatActivity {
+
+    public CandidateApplication app;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        app = (CandidateApplication) this.getApplication();
     }
 }
